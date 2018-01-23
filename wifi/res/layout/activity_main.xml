@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wifi.MainActivity" >
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp" />
+
+    <com.example.wifi.PressImageView
+        android:id="@+id/bacbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stobtn"
+        android:layout_below="@+id/lefbtn"
+        android:layout_marginTop="13dp"
+        android:background="#00000000"
+        android:src="@drawable/back" />
+
+    <com.example.wifi.PressImageView
+        android:id="@+id/forbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webview"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/rigbtn"
+        android:background="#00000000"
+        android:src="@drawable/forward" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/webview"
+        android:layout_alignTop="@+id/forbtn"
+        android:text="设置" />
+
+    <com.example.wifi.PressImageView
+        android:id="@+id/rigbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bacbtn"
+        android:layout_alignRight="@+id/webview"
+        android:background="#00000000"
+        android:src="@drawable/right" />
+
+    <Button
+        android:id="@+id/shuaxin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:text="刷新" />
+
+    <com.example.wifi.PressImageView
+        android:id="@+id/stobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shuaxin"
+        android:layout_alignLeft="@+id/forbtn"
+        android:background="#00000000"
+        android:src="@drawable/stop" />
+
+    <com.example.wifi.PressImageView
+        android:id="@+id/lefbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/stobtn"
+        android:layout_toLeftOf="@+id/stobtn"
+        android:layout_marginRight="13dp"
+        android:background="#00000000"
+        android:src="@drawable/left" />
+
+</RelativeLayout>
